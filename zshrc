@@ -108,7 +108,7 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
   #Autojump
   [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
   #Virtualenvwrapper
-  export WORKON_HOME=~/Envs
+  export WORKON_HOME=~/envs
   alias envs="source /usr/local/bin/virtualenvwrapper.sh"
   #Autoenv
   source /usr/local/opt/autoenv/activate.sh

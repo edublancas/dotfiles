@@ -1,0 +1,4 @@
+#Stop iTunes listening to keyboard media keys
+launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist
+#To enable it 
+launchctl load -w /System/Library/LaunchAgents/com.apple.rcd.plist

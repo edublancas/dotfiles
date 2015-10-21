@@ -1,3 +1,5 @@
+alias cleandesktop="mv ~/Desktop/* ~/stuff"
+alias i="ipython"
 alias wo="workon"
 alias jnb="jupyter notebook"
 alias ls="ls -Gp"
