@@ -7,8 +7,8 @@ done;
 unset file;
 
 #Locale
-export LC_ALL=es_ES.UTF-8
-export LANG=es_ES.UTF-8
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
 
 #Prompt
 #export PS1='\[\e[0;31m\]\u\[\e[m\] \[\e[1;34m\]\w\[\e[m\] \[\e[0;31m\]\$ \[\e[m\]\[\e[0;32m\]'
@@ -20,6 +20,7 @@ export PS1="\[\033[38;5;9m\]\A\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]
 if [[ "$OSTYPE" == "darwin"* ]]; then
   #Add local/bin to path (for Homebrew packages)
   export PATH="/usr/local/bin:$PATH"
+  export PATH="/usr/local/texlive/2015/bin/x86_64-darwin:$PATH"
 fi
 
 

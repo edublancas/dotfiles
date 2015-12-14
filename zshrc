@@ -93,13 +93,14 @@ source $ZSH/oh-my-zsh.sh
  
  
 #Locale
-export LC_ALL=es_ES.UTF-8
-export LANG=es_ES.UTF-8
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
 
 #OS X only exports
 if [[ "$OSTYPE" == "darwin"* ]]; then
   #Add local/bin to path (for Homebrew packages)
   export PATH="/usr/local/bin:$PATH"
+  export PATH="/usr/local/texlive/2015/bin/x86_64-darwin:$PATH"
 fi
 
 
