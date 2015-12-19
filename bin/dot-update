@@ -18,7 +18,7 @@ echo "› brew update"
 brew update
 
 #Try to upgrade important packages
-echo "› upgrading some bew packages"
+echo "› upgrading some brew packages"
 brew upgrade zsh
 brew upgrade bash
 brew upgrade vim
