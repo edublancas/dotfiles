@@ -17,6 +17,17 @@ export DOTS=$HOME/.dotfiles
 echo "› brew update"
 brew update
 
+#Try to upgrade important packages
+echo "› upgrading some bew packages"
+brew upgrade zsh
+brew upgrade bash
+brew upgrade vim
+brew upgrade python
+brew upgrade git
+brew upgrade docker
+brew upgrade docker-compose
+brew upgrade docker-machine
+
 # Install software
 echo "› $DOTS/script/install"
 $DOTS/script/install

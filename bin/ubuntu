@@ -1,0 +1,7 @@
+#!/bin/sh
+#Start docker-machine
+docker-machine start default
+#Configure shell
+eval "$(docker-machine env default)"
+#Start interactive session
+docker run -i -t ubuntu /bin/bash
