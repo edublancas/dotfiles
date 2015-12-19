@@ -1,0 +1,8 @@
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  #Add local/bin to path (for Homebrew packages)
+  export PATH="/usr/local/bin:$PATH"
+  export PATH="/usr/local/texlive/2015/bin/x86_64-darwin:$PATH"
+  #RVM
+  export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+  [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+fi
