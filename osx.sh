@@ -1,3 +1,7 @@
+#!/usr/bin/env bash
+# Ask for the administrator password upfront
+sudo -v
+
 #Based on:
 #https://github.com/mathiasbynens/dotfiles/blob/master/.osx
 
@@ -93,6 +97,13 @@ defaults write com.google.Chrome.canary PMPrintingExpandedStateForPrint2 -bool t
 #cp -r init/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text*/Packages/User/Preferences.sublime-settings 2> /dev/null
 
 ###############################################################################
+# iTerm2
+###############################################################################
+
+#Enable shell integration
+curl -L https://iterm2.com/misc/install_shell_integration.sh | bash
+
+###############################################################################
 # Other
 ###############################################################################
 
@@ -109,7 +120,7 @@ launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist
 # Kill affected applications                                                  #
 ###############################################################################
 
-for app in "Finder" "Google Chrome" "Google Chrome Canary" "SystemUIServer"; 
+for app in "Finder" "Google Chrome" "Google Chrome Canary" "SystemUIServer" "iTerm2"; 
 do
     killall "${app}" &> /dev/null
 done

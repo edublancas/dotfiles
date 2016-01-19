@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#This script runs another script and whe it finished, it sends an email
+#assumes mail is properly configured
+SCRIPT_TO_EXECUTE=$1
+SUBJECT=$2
+MESSAGE='I finished, get back to work'
+
+#EMAIL_ADDR is an env variable
+./SCRIPT_TO_EXECUTE && mail -s $SUBJECT $EMAIL_ADDR <<< $MESSAGE

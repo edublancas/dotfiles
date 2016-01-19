@@ -1,3 +1,6 @@
+#Enable iTerm shell interaction
+source ${HOME}/.iterm2_shell_integration.bash
+
 # shortcut to this dotfiles path is $DOTS
 export DOTS=$HOME/.dotfiles
 
