@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 #EMAIL_ADDR is an env variable
-mail -s $1 $EMAIL_ADDR <<< 'Just finished, get back to work.'
+mail -s "$1" $EMAIL_ADDR <<< 'Just finished, get back to work.'
