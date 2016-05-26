@@ -9,3 +9,6 @@ fi
 
 #Add .dotfiles/bin to the path
 export PATH="$HOME/.dotfiles/bin:$PATH"
+
+#Miniconda3
+export PATH=~/miniconda3/bin:"$PATH"
