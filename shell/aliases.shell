@@ -1,14 +1,21 @@
 alias cleandesktop="mv ~/Desktop/* ~/stuff"
+
 alias i="ipython"
 alias jnb="jupyter notebook"
 alias jnbp="jupyter notebook --port=8881 --no-browser"
+
 alias ls="ls -Gp"
 alias vi="vim"
 alias act="source activate"
+
 #Since I use git a lot
 alias gs="git status"
 alias ga="git add --all"
 alias gc="git commit -m"
+alias gd="git diff --staged"
+alias gps="git push"
+alias gpl="git pull"
+
 alias rm="rm -i"  # safety first
 # List only directories
 alias lsd='ls -l | grep "^d"'
