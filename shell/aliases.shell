@@ -1,10 +1,10 @@
 alias cleandesktop="mv ~/Desktop/* ~/stuff"
 alias i="ipython"
-alias wo="workon"
 alias jnb="jupyter notebook"
 alias jnbp="jupyter notebook --port=8881 --no-browser"
 alias ls="ls -Gp"
 alias vi="vim"
+alias act="source activate"
 #Since I use git a lot
 alias gs="git status"
 alias ga="git add --all"
