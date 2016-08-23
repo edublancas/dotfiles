@@ -1,28 +1,36 @@
 #!/usr/bin/env bash
 
+# CLI
 brew install bash
 brew install zsh
 brew install git
 
+# htop
 brew install htop
 chmod 6555 /usr/local/bin/htop
 sudo chown root /usr/local/bin/htop
 
-brew cask install miniconda
-
+# Apps
 brew cask install sublime-text
 brew cask install alfred
-#spoti
-#slack
-#dash
-#brew cask install dropbox
-#brew cask install google-chrome
+brew cask install spotify
+brew cask install slack
+brew cask install vlc
+brew cask install whatsapp
+brew cask install dropbox
+brew cask install skype
+brew cask install google-chrome
 
+
+# Programming
 brew cask install miniconda
-brew cask install divvy
+brew install r -s
+
+echo 'Manually install edu.blancas: Dash 3, Airmail 3, Tweetbot, Fantastical'
+echo 'Manually install fam.blancas: Divvy'
 
 
-brew install r
+
 #bartender
 #fantastical
 #cleanmymac
@@ -30,18 +38,11 @@ brew install r
 #iterm
 #typora/mou
 #airmail
-#tweetbot
-#spotify
-#skype
-#slack
 #things
 #transmission
-#vlc
-#whatsapp
-#dash
 #istat
 
-# Settings
+# Import settings
 # Alfred
 # Divvy
 # sublime text
@@ -51,4 +52,4 @@ brew install r
 mkdir ~/dev
 cd ~/dev
 git clone https://github.com/edublancas/dotfiles
-cd dotfile
+cd dotfiles
