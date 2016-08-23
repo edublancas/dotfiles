@@ -4,7 +4,7 @@
 brew cask install miniconda
 
 # Create a ds environment with jupyter
- conda create -n ds jupyter
+conda create -n ds jupyter
 
 
 # Install some packages in the root environment

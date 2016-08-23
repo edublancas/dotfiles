@@ -25,21 +25,14 @@ brew cask install bartender
 brew cask install cleanmymac
 brew cask install istat-menus
 brew cask install little-snitch
+brew cask install caffeine
 
-echo 'Manually install edu.blancas: Dash 3, Airmail 3, Tweetbot, Fantastical'
-echo 'Manually install fam.blancas: Divvy, Codebox'
-
-
-# brew cask install mactex
-#fantastical
-#iterm
-#typora/mou
-#things
+# Missing: mactex/basictex
+# md editor: typora
 
 # Import settings
 # Alfred
 # Divvy
-# sublime text
 
 
 # Setup Sublime Text
@@ -47,6 +40,9 @@ echo 'Install Package Control ST'
 
 # Dev folder
 mkdir ~/dev
+mkdir ~/dev/misc
 cd ~/dev
+
+# Dotfiles
 git clone https://github.com/edublancas/dotfiles
 cd dotfiles

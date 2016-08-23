@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-#https://rud.is/b/2015/10/22/installing-r-on-os-x-100-homebrew-edition/
-#brew install r -s
-
 # Install R using homebrew
 echo 'Installing R...'
 brew tap homebrew/science
