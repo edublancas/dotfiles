@@ -2,7 +2,7 @@
 source ${HOME}/.iterm2_shell_integration.bash
 
 # shortcut to this dotfiles path is $DOTS
-export DOTS=$HOME/.dotfiles
+export DOTS=$HOME/dev/dotfiles
 
 # load the path files
 for file in $(find $DOTS/**/*.shell | grep path.shell);

@@ -20,33 +20,30 @@ brew cask install whatsapp
 brew cask install dropbox
 brew cask install skype
 brew cask install google-chrome
-
-
-# Programming
-brew cask install miniconda
-brew install r -s
+brew cask install transmission
+brew cask install bartender
+brew cask install cleanmymac
+brew cask install istat-menus
+brew cask install little-snitch
 
 echo 'Manually install edu.blancas: Dash 3, Airmail 3, Tweetbot, Fantastical'
-echo 'Manually install fam.blancas: Divvy'
+echo 'Manually install fam.blancas: Divvy, Codebox'
 
 
-
-#bartender
+# brew cask install mactex
 #fantastical
-#cleanmymac
-#codebox
 #iterm
 #typora/mou
-#airmail
 #things
-#transmission
-#istat
 
 # Import settings
 # Alfred
 # Divvy
 # sublime text
 
+
+# Setup Sublime Text
+echo 'Install Package Control ST'
 
 # Dev folder
 mkdir ~/dev
