@@ -1,0 +1,54 @@
+#!/usr/bin/env bash
+
+brew install bash
+brew install zsh
+brew install git
+
+brew install htop
+chmod 6555 /usr/local/bin/htop
+sudo chown root /usr/local/bin/htop
+
+brew cask install miniconda
+
+brew cask install sublime-text
+brew cask install alfred
+#spoti
+#slack
+#dash
+#brew cask install dropbox
+#brew cask install google-chrome
+
+brew cask install miniconda
+brew cask install divvy
+
+
+brew install r
+#bartender
+#fantastical
+#cleanmymac
+#codebox
+#iterm
+#typora/mou
+#airmail
+#tweetbot
+#spotify
+#skype
+#slack
+#things
+#transmission
+#vlc
+#whatsapp
+#dash
+#istat
+
+# Settings
+# Alfred
+# Divvy
+# sublime text
+
+
+# Dev folder
+mkdir ~/dev
+cd ~/dev
+git clone https://github.com/edublancas/dotfiles
+cd dotfile
