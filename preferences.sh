@@ -3,6 +3,9 @@ DROPBOX="$HOME/Dropbox/app settings"
 PREFERENCES="$HOME/Library/Preferences"
 
 DIVVY="com.mizage.Divvy.plist"
+# Import settings
+# Alfred
+
 
 if  [[ $1 = "setup" ]]; then
     echo "Copying your preference files to Dropbox"

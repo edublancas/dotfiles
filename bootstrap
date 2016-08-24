@@ -6,6 +6,7 @@ brew install zsh
 brew install git
 brew install autojump
 brew install tree
+brew install tldr
 
 # htop
 brew install htop
@@ -31,12 +32,8 @@ brew cask install caffeine
 
 # Missing: mactex/basictex
 # md editor: typora
-# tldr, joe
+# joe
 # oh-my-zsh
-
-# Import settings
-# Alfred
-# Divvy
 
 
 # Setup Sublime Text
