@@ -20,6 +20,7 @@ elif [[ $1 = "sync" ]]; then
     cd $PREFERENCES
     rm $DIVVY
     ln -s "$DROPBOX/$DIVVY"
+    echo 'Done. Log out for the changes to take effect'
 else
     echo 'Invalid option'
 fi
