@@ -1,3 +1,4 @@
+# REMOVE
 #OS X only utilities
 if [[ "$OSTYPE" == "darwin"* ]]; then
   #Autojump

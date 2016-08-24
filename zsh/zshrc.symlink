@@ -1,5 +1,5 @@
 # shortcut to this dotfiles path is $DOTS
-export DOTS=$HOME/.dotfiles
+export DOTS=$HOME/dev/dotfiles
 
 #Load oh-my-zsh settings
 source $DOTS/zsh/oh-my-zsh.sh
