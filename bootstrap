@@ -4,6 +4,8 @@
 brew install bash
 brew install zsh
 brew install git
+brew install autojump
+brew install tree
 
 # htop
 brew install htop

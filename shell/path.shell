@@ -12,6 +12,3 @@ export PATH="$HOME/.dotfiles/bin:$PATH"
 
 #Miniconda3
 export PATH=~/miniconda3/bin:"$PATH"
-
-# GAE SDK
-export PATH=$PATH:~/dev/misc/google_appengine
