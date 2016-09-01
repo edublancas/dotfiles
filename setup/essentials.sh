@@ -29,8 +29,8 @@ brew cask install cleanmymac
 brew cask install istat-menus
 brew cask install little-snitch
 brew cask install caffeine
+brew cask install basictex
 
-# Missing: mactex/basictex
 # md editor: typora
 # joe
 # oh-my-zsh
