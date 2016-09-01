@@ -31,6 +31,18 @@ brew cask install little-snitch
 brew cask install caffeine
 brew cask install basictex
 
+# joe
+# https://github.com/karan/joe
+git clone https://github.com/karan/joe
+chmod +x joe/tool.sh
+./joe/tool.sh build
+rm -rf joe
+joe u
+
+# md editor: typora
+# joe
+# oh-my-zsh
+
 # Quicklook plugins
 # https://github.com/sindresorhus/quick-look-plugins
 brew cask install qlcolorcode
@@ -41,18 +53,13 @@ brew cask install quicklook-csv
 brew cask install betterzipql
 brew cask install qlimagesize
 
-# md editor: typora
-# joe
-# oh-my-zsh
-
-
 # Setup Sublime Text
 echo 'Install Package Control ST'
 
 # Dev folder
-mkdir ~/dev
-mkdir ~/dev/misc
-cd ~/dev
+mkdir $HOME/dev
+mkdir $HOME/dev/misc
+cd $HOME/dev
 
 # Dotfiles
 git clone https://github.com/edublancas/dotfiles
