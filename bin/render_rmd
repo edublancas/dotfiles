@@ -1,0 +1,4 @@
+#!/usr/bin/env Rscript
+library(rmarkdown)
+args<-commandArgs(TRUE)
+render(args[1])
