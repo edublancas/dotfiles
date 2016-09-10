@@ -7,3 +7,7 @@ local({
     r["CRAN"] <- "http://cran.revolutionanalytics.com"
     options(repos=r)
 })
+
+# Prevent save workspace from appearing
+# http://stackoverflow.com/questions/4996090/how-to-disable-save-workspace-image-prompt-in-r
+formals(quit)$save <- "no"

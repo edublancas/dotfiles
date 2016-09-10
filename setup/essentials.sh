@@ -36,7 +36,7 @@ brew cask install basictex
 git clone https://github.com/karan/joe
 chmod +x joe/tool.sh
 ./joe/tool.sh build
-rm -rf joe
+rm -rf joe/
 joe u
 
 # md editor: typora
