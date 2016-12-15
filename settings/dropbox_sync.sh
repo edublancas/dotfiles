@@ -1,4 +1,4 @@
-# Sync preference files
+# Sync preference files with Dropbox
 DROPBOX="$HOME/Dropbox/app settings"
 PREFERENCES="$HOME/Library/Preferences"
 

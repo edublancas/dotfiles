@@ -1,1 +1,1 @@
-Files for software installation and configuration.
+Files for software installation.
