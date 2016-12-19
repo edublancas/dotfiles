@@ -5,8 +5,8 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
   export PATH="/usr/local/texlive/2015/bin/x86_64-darwin:$PATH"
   export PATH="/Library/TeX/texbin:$PATH"
   # GAE SDK
-  export PATH="/usr/local/google_appengine:$PATH"
-  #export PATH="/Users/edu/dev/misc/google-cloud-sdk/bin:$PATH"
+  #export PATH="/usr/local/google_appengine:$PATH"
+  export PATH="$HOME/dev/misc/google-cloud-sdk/bin:$PATH"
   #RVM
   export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
   [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
