@@ -56,9 +56,7 @@
         "passive_warnings": false,
         "paths": {
             "linux": [],
-            "osx": [
-                "/Users/edu/miniconda3/bin/python"
-            ],
+            "osx": [],
             "windows": []
         },
         "python_paths": {

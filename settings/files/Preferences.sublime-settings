@@ -3,11 +3,6 @@
 	"color_scheme": "Packages/User/SublimeLinter/Monokai Bright (SL).tmTheme",
 	"detect_indentation": false,
 	"font_face": "Hack",
-	"font_options":
-	[
-		"gray_antialias",
-		"subpixel_antialias"
-	],
 	"font_size": 13,
 	"ignored_packages":
 	[
