@@ -7,5 +7,5 @@ windows:
         - act ossa
         - git checkout edu-develop
         - git pull
-        - dev_appserver.py .
+        - dev_appserver.py --host=ossa-local.com .
       - act ossa
