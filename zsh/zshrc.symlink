@@ -32,5 +32,14 @@ done
 
 unset config_files
 
-# direnv
+# direnv hook
 eval "$(direnv hook zsh)"
+
+# restore ps1 conda functionality for direnv
+show_env() {
+  if [ -n "$CONDA_DEFAULT_ENV" ]; then
+    echo "($CONDA_DEFAULT_ENV)"
+  fi
+}
+
+PS1='$(show_env)'$PS1
