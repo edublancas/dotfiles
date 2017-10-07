@@ -31,3 +31,6 @@ do
 done
 
 unset config_files
+
+# direnv
+eval "$(direnv hook zsh)"
