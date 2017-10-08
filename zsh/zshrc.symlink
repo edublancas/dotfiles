@@ -37,9 +37,13 @@ eval "$(direnv hook zsh)"
 
 # restore ps1 conda functionality for direnv
 show_env() {
-  if [ -n "$CONDA_DEFAULT_ENV" ]; then
-    echo "($CONDA_DEFAULT_ENV)"
-  fi
+    # if conda env var is set
+    if [ -n "$CONDA_DEFAULT_ENV" ]; then
+        # and ps1 does not already contain the env name
+        if [[ "$PS1" != *"$CONDA_DEFAULT_ENV"* ]]; then
+            echo "($CONDA_DEFAULT_ENV)"
+        fi
+    fi
 }
 
 PS1='$(show_env)'$PS1
