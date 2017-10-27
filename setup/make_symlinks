@@ -5,6 +5,8 @@ Create symlinks to $HOME
 import os
 import glob
 
+from . import symlinks
+
 DOTS = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
 HOME = os.path.expanduser('~')
 
@@ -19,14 +21,6 @@ def make_dot_path(source):
 sources = glob.glob(os.path.join(DOTS, '**/*.symlink'), recursive=True)
 destinations = [make_dot_path(s) for s in sources]
 
-for source, destination in zip(sources, destinations):
-
-    if os.path.isfile(destination):
-        print(f'{destination} exists, removing...')
-        os.remove(destination)
-
-    print(f'Symlink created: {destination} -> {source}\n')
-    os.symlink(source, destination)
-
+symlinks.make(sources, destinations)
 
 print('Done creating symlinks...')

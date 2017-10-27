@@ -13,6 +13,11 @@
 * shell/ - Shell stuff (bash and zsh), bash/ and zsh/ read from there to setup the profile
 * zsh/ - Scripts to setup zsh profile
 
+## Requirements
+
+* Ruby (to install homebrew)
+* Python + pyyaml (to run some scripts)
+
 ## Setting up a new computer
 
 ```bash
