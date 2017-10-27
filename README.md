@@ -8,6 +8,4 @@
 * zsh/ - Scripts to setup zsh profile
 * *.symlink - Other dotfiles, symlinks will be created to the $HOME folder
 
-
-
 Based on https://github.com/holman/dotfiles
