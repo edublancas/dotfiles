@@ -1,11 +1,11 @@
 windows:
   - name: ossa
     root: ~/dev/krieger/ossa
-    layout: even-vertical
+    layout: even-horizontal
     panes:
+      - act ossa
       - commands:
         - act ossa
         - git checkout edu-develop
         - git pull
         - dev_appserver.py --host=ossa-local.com .
-      - act ossa
