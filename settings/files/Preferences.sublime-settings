@@ -1,11 +1,12 @@
 {
 	"bold_folder_labels": true,
-	"color_scheme": "Packages/Color Scheme - Default/Monokai Bright.tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
 	"detect_indentation": false,
 	"font_face": "Hack",
 	"font_size": 13,
 	"ignored_packages":
 	[
+		"Indent XML",
 		"MagicPython",
 		"Markdown",
 		"Objective-C",
@@ -30,6 +31,6 @@
 		79
 	],
 	"tab_size": 4,
-	"theme": "Material-Theme.sublime-theme",
+	"theme": "Adaptive.sublime-theme",
 	"translate_tabs_to_spaces": true
 }

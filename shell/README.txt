@@ -1,1 +1,0 @@
-Shell configuration. Shells such as bash and zsh will take sttuff from here.
