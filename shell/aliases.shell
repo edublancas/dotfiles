@@ -1,3 +1,5 @@
+# aliases
+
 alias i="ipython"
 alias jnb="jupyter notebook"
 alias jnbp="jupyter notebook --port=8881 --no-browser"
