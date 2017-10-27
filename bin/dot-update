@@ -18,12 +18,14 @@ brew update
 #Try to upgrade important packages
 echo "› upgrading some brew packages"
 brew upgrade autojump
+brew upgrade git
 brew upgrade pandoc
-brew upgrade r
 brew upgrade zsh
 brew upgrade bash
 brew upgrade vim
-brew upgrade git
+
+# this one takes a lot of time...
+# brew upgrade r
 
 # Install software
 echo "› $DOTS/script/install"

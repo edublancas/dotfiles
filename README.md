@@ -1,16 +1,17 @@
 # dotfiles
 
+* run `bin/dot-update` often to update software
+* files with `*.symlink` extension will be symlinked in `$HOME`
+* `*.sh` files are executed when running `install`
+
+## Folders
+
 * bash/ - Scripts to setup bash profile
 * bin/ - Executables
 * settings/ - Syncing app settings
 * setup/ - Scripts for setting up a new computer
 * shell/ - Shell stuff (bash and zsh), bash/ and zsh/ read from there to setup the profile
 * zsh/ - Scripts to setup zsh profile
-* *.symlink - Other dotfiles, symlinks will be created to the $HOME folder
-
-## Remarks
-
-* All sh files are executed when running `install`
 
 ## Setting up a new computer
 
@@ -28,4 +29,5 @@ cd dotfiles/setup
 ./install
 ```
 
-Based on https://github.com/holman/dotfiles
+
+Based on [holman dotfiles](https://github.com/holman/dotfiles)

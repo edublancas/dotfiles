@@ -16,6 +16,7 @@ chmod 6555 /usr/local/bin/htop
 sudo chown root /usr/local/bin/htop
 
 # apps
+brew cask install 1password
 brew cask install sublime-text
 brew cask install alfred
 brew cask install spotify
