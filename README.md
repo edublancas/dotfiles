@@ -2,7 +2,7 @@
 
 * run `bin/dot-update` often to update software
 * files with `*.symlink` extension will be symlinked in `$HOME`
-* `*.sh` files are executed when running `install`
+* `install.sh` files are executed when running `install`
 
 ## Folders
 
