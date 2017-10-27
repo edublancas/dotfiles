@@ -1,5 +1,3 @@
-alias cleandesktop="mv ~/Desktop/* ~/stuff"
-
 alias i="ipython"
 alias jnb="jupyter notebook"
 alias jnbp="jupyter notebook --port=8881 --no-browser"
@@ -16,19 +14,23 @@ alias gd="git diff --staged"
 alias gps="git push"
 alias gpl="git pull"
 
-alias rm="rm -i"  # safety first
+# safety first
+alias rm="rm -i" 
+
 # List only directories
 alias lsd='ls -l | grep "^d"'
+
 # Tree with 2 levels by default
 alias tree='tree -L 2'
+
 #This is OS x only
 alias notify='terminal-notifier -message "Yay!" -title "Task done" -sound default'
-alias dbf2csv="perl /Users/Edu/Development/useful\ scripts/DBF2CSV/dbf2csv.pl"
 alias lock="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
-alias cask='brew cask'
+
 # Show/hide hidden files in Finder
 alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
 alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
+
 # Hide/show all desktop icons
 alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
 alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"

@@ -1,16 +1,18 @@
+# Setup bash profile by loading *.shell files
+
 # Declare environmental variables needed to setup
 export DOTS=$HOME/dev/dotfiles
 
 #Enable iTerm shell interaction
 source ${HOME}/.iterm2_shell_integration.bash
 
-# load the path files
+# load the path.shell files
 for file in $(find $DOTS/**/*.shell | grep path.shell);
 do
   source $file
 done
 
-# load everything but the path and completion files
+# load everything excluding path and completion files
 for file in $(find $DOTS/**/*.shell | grep -v -E "path|completion");
 do
   source $file
@@ -22,8 +24,4 @@ do
   source $file
 done
 
-#Prompt
-#export PS1='\[\e[0;31m\]\u\[\e[m\] \[\e[1;34m\]\w\[\e[m\] \[\e[0;31m\]\$ \[\e[m\]\[\e[0;32m\]'
-#export PS1="\[\033[38;5;9m\]\A\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]\[\033[38;5;12m\]\u\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]\[\033[38;5;10m\]\w\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]\[\033[38;5;9m\]\\$\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]"
-#with host name
 export PS1="\[\033[38;5;9m\]\A\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]\[\033[38;5;39m\]\u@\h\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]\[\033[38;5;10m\]\w\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]\[\033[38;5;9m\]\\$\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]"
