@@ -1,3 +1,5 @@
+# Setup bash profile by loading *.shell files
+
 # Declare environmental variables needed to setup
 export DOTS=$HOME/dev/dotfiles
 

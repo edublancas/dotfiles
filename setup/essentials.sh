@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
-# CLI
+# Setup a new macOS comptuter by installing essential software
+
+# command line tools
 brew install bash
 brew install zsh
 brew install git
@@ -13,7 +15,7 @@ brew install htop
 chmod 6555 /usr/local/bin/htop
 sudo chown root /usr/local/bin/htop
 
-# Apps
+# apps
 brew cask install sublime-text
 brew cask install alfred
 brew cask install spotify
@@ -52,15 +54,3 @@ brew cask install quicklook-json
 brew cask install quicklook-csv
 brew cask install betterzipql
 brew cask install qlimagesize
-
-# Setup Sublime Text
-echo 'Install Package Control ST'
-
-# Dev folder
-mkdir $HOME/dev
-mkdir $HOME/dev/misc
-cd $HOME/dev
-
-# Dotfiles
-git clone https://github.com/edublancas/dotfiles
-cd dotfiles
