@@ -6,6 +6,7 @@ import os.path
 import yaml
 import symlinks
 
+
 with open('./cloud.yaml') as f:
     cloud = yaml.load(f)
 

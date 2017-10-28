@@ -1,6 +1,6 @@
 {
 	"bold_folder_labels": true,
-	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/Monokai Bright (SL).tmTheme",
 	"detect_indentation": false,
 	"font_face": "Hack",
 	"font_options":
@@ -11,29 +11,12 @@
 	"font_size": 13,
 	"ignored_packages":
 	[
-		"3024 Color Scheme",
-		"AutoPEP8",
-		"Colorsublime",
-		"DocBlockr",
-		"Dockerfile Syntax Highlighting",
-		"Indent XML",
-		"Jinja2",
-		"JsFormat",
-		"JSON Reindent",
-		"Julia",
+		"MagicPython",
 		"Markdown",
-		"Material Theme",
 		"Objective-C",
 		"PostgreSQL Syntax Highlighting",
 		"SideBarEnhancements",
 		"SublimeLinter-contrib-lintr",
-		"SublimeLinter-flake8",
-		"Theme - Asphalt",
-		"Theme - Brogrammer",
-		"Theme - El Capitan",
-		"Theme - Spacegray",
-		"Theme - Toxin",
-		"Themr",
 		"Vintage"
 	],
 	"indent_guide_options":
