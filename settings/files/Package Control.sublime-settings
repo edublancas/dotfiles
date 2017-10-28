@@ -5,46 +5,6 @@
 	],
 	"installed_packages":
 	[
-		"3024 Color Scheme",
-		"AutoPEP8",
-		"Colorsublime",
-		"DashDoc",
-		"DocBlockr",
-		"Dockerfile Syntax Highlighting",
-<<<<<<< Updated upstream
-		"File Rename",
-=======
-		"Emmet",
-		"File Rename",
-		"Highlight Dodgy Chars",
->>>>>>> Stashed changes
-		"Indent XML",
-		"Jinja2",
-		"JsFormat",
-		"JSON Reindent",
-		"Julia",
-		"knitr",
-		"MagicPython",
-		"MarkdownEditing",
-		"Material Theme",
-		"Package Control",
-		"PostgreSQL Syntax Highlighting",
-		"R-Box",
-		"Schemr",
-		"SendCode",
-		"Seti_UI",
-		"SideBarEnhancements",
-		"SublimeLinter",
-		"SublimeLinter-contrib-lintr",
-		"SublimeLinter-flake8",
-		"SublimeLinter-jshint",
-		"SublimeLinter-pylint",
-		"Theme - Asphalt",
-		"Theme - Brogrammer",
-		"Theme - El Capitan",
-		"Theme - Spacegray",
-		"Theme - Toxin",
-		"Themr",
-		"WordCount"
+		"Package Control"
 	]
 }

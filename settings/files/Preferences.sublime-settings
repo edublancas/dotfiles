@@ -5,14 +5,35 @@
 	"font_face": "Hack",
 	"font_options":
 	[
+		"gray_antialias",
+		"subpixel_antialias"
 	],
 	"font_size": 13,
 	"ignored_packages":
 	[
-		"MagicPython",
+		"3024 Color Scheme",
+		"AutoPEP8",
+		"Colorsublime",
+		"DocBlockr",
+		"Dockerfile Syntax Highlighting",
+		"Indent XML",
+		"Jinja2",
+		"JsFormat",
+		"JSON Reindent",
+		"Julia",
 		"Markdown",
+		"Material Theme",
 		"Objective-C",
+		"PostgreSQL Syntax Highlighting",
 		"SideBarEnhancements",
+		"SublimeLinter-contrib-lintr",
+		"SublimeLinter-flake8",
+		"Theme - Asphalt",
+		"Theme - Brogrammer",
+		"Theme - El Capitan",
+		"Theme - Spacegray",
+		"Theme - Toxin",
+		"Themr",
 		"Vintage"
 	],
 	"indent_guide_options":
