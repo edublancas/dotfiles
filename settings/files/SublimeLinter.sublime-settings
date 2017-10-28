@@ -93,6 +93,10 @@
 			],
 			"osx":
 			[
+<<<<<<< Updated upstream
+=======
+				"/Users/edu/miniconda3/bin/python"
+>>>>>>> Stashed changes
 			],
 			"windows":
 			[

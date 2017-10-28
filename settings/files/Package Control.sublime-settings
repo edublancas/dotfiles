@@ -11,7 +11,13 @@
 		"DashDoc",
 		"DocBlockr",
 		"Dockerfile Syntax Highlighting",
+<<<<<<< Updated upstream
 		"File Rename",
+=======
+		"Emmet",
+		"File Rename",
+		"Highlight Dodgy Chars",
+>>>>>>> Stashed changes
 		"Indent XML",
 		"Jinja2",
 		"JsFormat",
@@ -23,6 +29,7 @@
 		"Material Theme",
 		"Package Control",
 		"PostgreSQL Syntax Highlighting",
+		"R-Box",
 		"Schemr",
 		"SendCode",
 		"Seti_UI",

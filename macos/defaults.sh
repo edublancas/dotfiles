@@ -26,7 +26,7 @@ defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 ###############################################################################
 
 # Save screenshots to the desktop
-defaults write com.apple.screencapture location -string "${HOME}/Desktop"
+defaults write com.apple.screencapture location -string "${HOME}/Documents/Screenshots"
 
 # Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF)
 defaults write com.apple.screencapture type -string "png"
@@ -66,7 +66,7 @@ chflags nohidden ~/Library
 # Disable Dashboard
 defaults write com.apple.dashboard mcx-disabled -bool true
 
-# Don’t show Dashboard as a Space
+# Dont show Dashboard as a Space
 defaults write com.apple.dock dashboard-in-overlay -bool true
 
 ###############################################################################
