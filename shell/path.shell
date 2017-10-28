@@ -15,6 +15,9 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
   export PATH="$PATH:$HOME/context/tex/texmf-osx-64/bin"
 fi
 
+# linux brew
+export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+
 # add .dotfiles/bin to the path
 export PATH="$DOTS/bin:$PATH"
 
