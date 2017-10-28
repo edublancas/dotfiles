@@ -13,6 +13,7 @@ alias gs="git status"
 alias ga="git add --all"
 alias gc="git commit -m"
 alias gd="git diff --staged"
+alias gdt="git difftool --staged"
 alias gps="git push"
 alias gpl="git pull"
 
