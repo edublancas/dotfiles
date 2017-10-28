@@ -1,13 +1,7 @@
-# REMOVE
-#OS X only utilities
+# other stuff...
+
+#  if running macOS
 if [[ "$OSTYPE" == "darwin"* ]]; then
-  #Autojump
+  # autojump
   [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
-  #Virtualenvwrapper
-  #export WORKON_HOME=~/envs
-  #alias envs="source /usr/local/bin/virtualenvwrapper.sh"
-  #Autoenv
-  #source /usr/local/opt/autoenv/activate.sh
-  #Load virtualenvwrapper
-  #envs
 fi

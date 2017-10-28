@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-#
 # bootstrap installs things.
 
 cd "$(dirname "$0")/.."
@@ -137,7 +136,10 @@ install_dotfiles () {
   done
 }
 
-#setup_gitconfig
+# run git configutation
+setup_gitconfig
+
+# create symlinks from *.symlink files
 install_dotfiles
 
 # If we're on a Mac, let's install and setup homebrew.

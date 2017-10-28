@@ -1,1 +1,0 @@
-Files for syncing software configuration.

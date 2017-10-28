@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+"""
+Create symlinks to ~/Library/Preferences/*.plist from a syncing
+storage source (like Google Drive, Dropbox or Tresorit)
+"""
+import glob
+import os
+
+import symlinks
+
+HOME = os.path.expanduser('~')
+PREFERENCES = os.path.join(HOME, 'Library/Preferences')
+
+
+def make_preferences_path(source):
+    """Build the dotfile destination from the original path
+    """
+    filename = os.path.basename(source)
+    return os.path.join(PREFERENCES, filename)
+
+
+SYNCED_FOLDER = os.path.join(HOME, 'Documents/app-settings')
+
+sources = glob.glob(os.path.join(SYNCED_FOLDER, '*.plist'))
+destinations = [make_preferences_path(s) for s in sources]
+
+symlinks.make(sources, destinations)

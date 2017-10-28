@@ -5,8 +5,6 @@
 	"font_face": "Hack",
 	"font_options":
 	[
-		"gray_antialias",
-		"subpixel_antialias"
 	],
 	"font_size": 13,
 	"ignored_packages":
@@ -35,6 +33,6 @@
 		79
 	],
 	"tab_size": 4,
-	"theme": "Material-Theme.sublime-theme",
+	"theme": "Adaptive.sublime-theme",
 	"translate_tabs_to_spaces": true
 }

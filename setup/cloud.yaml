@@ -1,0 +1,7 @@
+# itermocil
+path: ~/Documents/synced-folders
+
+synced:
+  - source: itermocil
+    destination: ~/.itermocil
+
