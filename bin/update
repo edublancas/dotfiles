@@ -4,7 +4,7 @@ brew update
 
 # Try to upgrade important packages
 echo "› upgrading some brew packages"
-brew upgrade
+brew upgrade bash zsh git autojump tldr htop
 
 # update miniconda
 echo "› upgrading miniconda"
