@@ -1,0 +1,11 @@
+# Upgrade homebrew
+echo "› brew update"
+brew update
+
+# Try to upgrade important packages
+echo "› upgrading some brew packages"
+brew upgrade
+
+# update miniconda
+echo "› upgrading miniconda"
+conda update conda

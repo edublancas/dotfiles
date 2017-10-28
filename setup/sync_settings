@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env python
 """
 Create symlinks to ~/Library/Preferences/*.plist from a syncing
 storage source (like Google Drive, Dropbox or Tresorit)
@@ -10,6 +10,7 @@ import symlinks
 
 HOME = os.path.expanduser('~')
 PREFERENCES = os.path.join(HOME, 'Library/Preferences')
+SYNCED_FOLDER = os.path.join(HOME, 'Documents/app-settings')
 
 
 def make_preferences_path(source):
@@ -17,9 +18,6 @@ def make_preferences_path(source):
     """
     filename = os.path.basename(source)
     return os.path.join(PREFERENCES, filename)
-
-
-SYNCED_FOLDER = os.path.join(HOME, 'Documents/app-settings')
 
 sources = glob.glob(os.path.join(SYNCED_FOLDER, '*.plist'))
 destinations = [make_preferences_path(s) for s in sources]

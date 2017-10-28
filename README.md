@@ -1,22 +1,12 @@
 # dotfiles
 
-* run `bin/dot-update` often to update software
+* run `update` often to update software
 * files with `*.symlink` extension will be symlinked in `$HOME`
 * `install.sh` files are executed when running `install`
-
-## Folders
-
-* bash/ - Scripts to setup bash profile
-* bin/ - Executables
-* settings/ - Syncing app settings
-* setup/ - Scripts for setting up a new computer
-* shell/ - Shell stuff (bash and zsh), bash/ and zsh/ read from there to setup the profile
-* zsh/ - Scripts to setup zsh profile
 
 ## Requirements
 
 * Ruby (to install homebrew)
-* Python + pyyaml (to run some scripts)
 
 ## Setting up a new computer
 
@@ -29,10 +19,18 @@ cd $HOME/dev
 # clone dotfiles
 git clone https://github.com/edublancas/dotfiles
 
-# run install script
+# run install script - this installs some packages from brew and miniconda
+# along with some python packages in the root environment
 cd dotfiles/setup
 ./install
 ```
 
+## Syncing
+
+Once you ran `install`, there are some scripts to sync settings:
+
+* `make_symlinks` creates symlinks from `*.symlink` files to `$HOME`
+* `sync_settings` symlinks `*.plist` app settings from a a specified folder to `~/Library/Preferences`
+* `sync_cloud` symlinks between folders specified in `cloud.yaml` (I use it to sync some other settings by storing them in a tresorit folder)
 
 Based on [holman dotfiles](https://github.com/holman/dotfiles)
