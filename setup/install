@@ -18,8 +18,6 @@ fi
 
 
 # install install.sh files
-exit 0
-
 set -e
 
 #Move to dotfiles root
