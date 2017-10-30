@@ -8,10 +8,11 @@ alias ls="ls -Gp"
 alias vi="vim"
 alias act="source activate"
 
-#Since I use git a lot
+# git aliases
 alias gs="git status"
 alias ga="git add --all"
 alias gc="git commit -m"
+alias gsa="git status; git add --all"
 alias gd="git diff --staged"
 alias gdt="git difftool --staged"
 alias gps="git push"
