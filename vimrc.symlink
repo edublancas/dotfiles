@@ -1,7 +1,7 @@
 set number
 syntax on
 
-# tabs are four spaces
+
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
