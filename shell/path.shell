@@ -23,3 +23,6 @@ export PATH="$DOTS/bin:$PATH"
 
 # miniconda
 export PATH=$HOME/miniconda3/bin:"$PATH"
+
+# haskell packages
+export PATH=$HOME/Library/Haskell/bin:"$PATH"
