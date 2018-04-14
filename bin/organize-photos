@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+organize $HOME/Pictures/last_import/ $HOME/Pictures/
