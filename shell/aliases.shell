@@ -2,7 +2,7 @@
 
 alias i="ipython"
 alias jnb="jupyter notebook"
-alias jnbp="jupyter notebook --port=8881 --no-browser"
+alias jnbp="jupyter notebook --port=8888 --no-browser"
 
 alias ls="ls -Gp"
 alias vi="vim"
