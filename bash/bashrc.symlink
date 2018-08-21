@@ -3,9 +3,6 @@
 # Declare environmental variables needed to setup
 export DOTS=$HOME/dev/dotfiles
 
-#Enable iTerm shell interaction
-source ${HOME}/.iterm2_shell_integration.bash
-
 # load the path.shell files
 for file in $(find $DOTS/**/*.shell | grep path.shell);
 do
