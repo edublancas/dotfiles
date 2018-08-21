@@ -13,7 +13,6 @@
 ```bash
 # create a dev folder
 mkdir $HOME/dev
-mkdir $HOME/dev/misc
 cd $HOME/dev
 
 # clone dotfiles
@@ -22,7 +21,9 @@ git clone https://github.com/edublancas/dotfiles
 # run install script - this installs some packages from brew and miniconda
 # along with some python packages in the root environment
 cd dotfiles/setup
-./install
+
+# requires pythn 3
+./make_symlinks
 ```
 
 ## Syncing
