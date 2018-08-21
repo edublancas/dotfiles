@@ -27,5 +27,17 @@ if [ -f '/Users/edu/dev/google-cloud-sdk/path.bash.inc' ]; then source '/Users/e
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/edu/dev/google-cloud-sdk/completion.bash.inc' ]; then source '/Users/edu/dev/google-cloud-sdk/completion.bash.inc'; fi
 
+# activate direnv
+eval "$(direnv hook bash)"
 
 export PS1="\[\033[38;5;9m\]\A\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]\[\033[38;5;39m\]\u@\h\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]\[\033[38;5;10m\]\w\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]\[\033[38;5;9m\]\\$\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]"
+
+
+show_virtual_env() {
+  if [ -n "$CONDA_DEFAULT_ENV" ]; then
+    echo "($(basename $CONDA_DEFAULT_ENV))"
+  fi
+}
+export -f show_virtual_env
+
+PS1='$(show_virtual_env)'$PS1
