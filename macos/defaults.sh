@@ -96,12 +96,6 @@ defaults write com.google.Chrome.canary PMPrintingExpandedStateForPrint2 -bool t
 # Install Sublime Text settings
 #cp -r init/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text*/Packages/User/Preferences.sublime-settings 2> /dev/null
 
-###############################################################################
-# iTerm2
-###############################################################################
-
-#Enable shell integration
-curl -L https://iterm2.com/misc/install_shell_integration.sh | bash
 
 ###############################################################################
 # Other
