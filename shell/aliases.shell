@@ -8,7 +8,7 @@ alias jnbp="jupyter notebook --port=8888 --no-browser"
 if [[ "$OSTYPE" == "darwin"* ]]; then
     alias ls="ls -Gp"
 else
-    alias ls="ls --color=auto"
+    alias ls="ls -p --color=auto"
 fi
 
 alias vi="vim"
