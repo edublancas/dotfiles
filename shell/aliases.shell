@@ -4,7 +4,13 @@ alias i="ipython"
 alias jnb="jupyter notebook"
 alias jnbp="jupyter notebook --port=8888 --no-browser"
 
-alias ls="ls -Gp"
+
+if [[ "$OSTYPE" == "darwin"* ]]; then
+    alias ls="ls -Gp"
+else
+    alias ls="ls --color=auto"
+fi
+
 alias vi="vim"
 alias act="source activate"
 
