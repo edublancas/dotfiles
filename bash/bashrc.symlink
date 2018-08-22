@@ -35,12 +35,16 @@ export PS1="\[\033[38;5;9m\]\A\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]
 
 show_virtual_env() {
   if [ -n "$CONDA_DEFAULT_ENV" ]; then
-    echo "($(basename $CONDA_DEFAULT_ENV))"
+    if [[ "$PS1" != *"($(basename $CONDA_DEFAULT_ENV))"* ]];then
+        echo "($(basename $CONDA_DEFAULT_ENV))"
+    fi
   elif [ -n "$VIRTUAL_ENV" ]; then
-    echo "($(basename $VIRTUAL_ENV))"
+    if [[ "$PS1" != *"($(basename $VIRTUAL_ENV))"* ]];then
+        echo "($(basename $VIRTUAL_ENV))"
+    fi
   fi
 }
 
 export -f show_virtual_env
 
-PS1='$(show_virtual_env)'$PS1
+PS1='$(show_virtual_env) '$PS1
