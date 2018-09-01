@@ -1,0 +1,10 @@
+# essential python packages
+
+# need this for sublime text
+pep8
+autopep8
+flake8
+
+# others
+pyyaml
+nbdime
