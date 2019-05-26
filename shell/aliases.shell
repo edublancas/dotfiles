@@ -12,7 +12,7 @@ else
 fi
 
 alias vi="vim"
-alias act="source activate"
+alias act="conda activate"
 
 # git aliases
 alias gs="git status"

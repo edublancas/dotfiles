@@ -34,6 +34,10 @@ done
 
 unset config_files
 
+# conda - this is the new way of setting up
+# for starting the base env do "conda activate"
+# aliases as "act"
+source $HOME/miniconda3/etc/profile.d/conda.sh
 
 # activate direnv
 eval "$(direnv hook zsh)"

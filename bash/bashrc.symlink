@@ -27,6 +27,10 @@ if [ -f '/Users/edu/dev/google-cloud-sdk/path.bash.inc' ]; then source '/Users/e
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/edu/dev/google-cloud-sdk/completion.bash.inc' ]; then source '/Users/edu/dev/google-cloud-sdk/completion.bash.inc'; fi
 
+# conda
+. $HOME/miniconda3/etc/profile.d/conda.sh
+conda activate
+
 # activate direnv
 eval "$(direnv hook bash)"
 
