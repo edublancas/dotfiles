@@ -1,2 +1,4 @@
-#Open current remote git repository url
+#!/bin/bash
+
+# Open current remote git repository url
 open $(git config --get remote.origin.url)
