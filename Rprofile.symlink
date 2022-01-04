@@ -1,12 +1,12 @@
 # Change colors when running R in the terminal
-if (Sys.getenv("TERM") == "xterm-256color") library("colorout")
+#if (Sys.getenv("TERM") == "xterm-256color") library("colorout")
 
 # Set default mirror
-local({
-    r <- getOption("repos")
-    r["CRAN"] <- "http://cran.revolutionanalytics.com"
-    options(repos=r)
-})
+#local({
+#    r <- getOption("repos")
+#    r["CRAN"] <- "http://cran.revolutionanalytics.com"
+#    options(repos=r)
+#})
 
 # Prevent save workspace from appearing
 # http://stackoverflow.com/questions/4996090/how-to-disable-save-workspace-image-prompt-in-r

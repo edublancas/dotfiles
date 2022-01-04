@@ -12,7 +12,7 @@ else
 fi
 
 alias vi="vim"
-alias act="conda activate"
+# alias act="conda activate"
 
 # git aliases
 alias gs="git status"
@@ -44,3 +44,6 @@ alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && kil
 # Hide/show all desktop icons
 alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
 alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
+
+# draw.io cli
+alias draw.io='/Applications/draw.io.app/Contents/MacOS/draw.io'

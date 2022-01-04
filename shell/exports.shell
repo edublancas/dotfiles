@@ -6,3 +6,6 @@ export LANG=en_US.UTF-8
 
 export EDITOR=vi
 export EMAIL_ADDRESS="fkq8@blancas.io"
+
+# ask ploomber not to track
+export PLOOMBER_STATS_ENABLED=false
