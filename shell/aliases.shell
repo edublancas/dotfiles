@@ -95,3 +95,27 @@ function compressmp4() {
         echo "Error: Compression failed"
     fi
 }
+
+# Function to compress a GIF file
+function compressgif() {
+    if [ -z "$1" ]; then
+        echo "Error: No input file provided"
+        echo "Usage: compressgif <input_file.gif>"
+        return 1
+    fi
+
+    local input_file="$1"
+    local filename=$(basename -- "$input_file")
+    local name="${filename%.*}"
+    local output_file="${name}-compressed.gif"
+
+    echo "Compressing $input_file to $output_file"
+    gifsicle -O3 --colors 32 --lossy=90 "$input_file" -o "$output_file"
+
+    if [ $? -eq 0 ]; then
+        echo "Compression completed successfully"
+    else
+        echo "Error: Compression failed"
+    fi
+}
+
