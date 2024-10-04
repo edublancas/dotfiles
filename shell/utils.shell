@@ -1,5 +1,8 @@
 # other stuff...
 
+# activate brew
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 #  if running macOS
 if [[ "$OSTYPE" == "darwin"* ]]; then
   # autojump

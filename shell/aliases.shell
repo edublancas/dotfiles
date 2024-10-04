@@ -24,6 +24,21 @@ alias gdt="git difftool --staged"
 alias gps="git push"
 alias gpl="git pull"
 
+# delete branches
+function gbdel {
+    if [ -z "$1" ]; then
+        echo "Error: No branch name provided"
+        return 1
+    fi
+
+
+    local branch="$1"
+    echo "Deleting branch: $branch"
+    git branch -d $branch
+    git push origin -d $branch
+}
+
+
 # safety first
 alias rm="rm -i" 
 
@@ -50,3 +65,10 @@ alias draw.io='/Applications/draw.io.app/Contents/MacOS/draw.io'
 
 # conda
 alias ca='conda activate'
+
+# docker
+alias dcls='docker container ls'
+
+function dex() {
+    docker exec -it $1 bash
+}

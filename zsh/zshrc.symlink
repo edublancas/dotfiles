@@ -37,7 +37,7 @@ unset config_files
 # conda - this is the new way of setting up
 # for starting the base env do "conda activate"
 # aliases as "act"
-source $HOME/miniconda3/etc/profile.d/conda.sh
+# source $HOME/miniconda3/etc/profile.d/conda.sh  # commented out by conda initialize
 
 # activate direnv
 # eval "$(direnv hook zsh)"
@@ -71,3 +71,39 @@ if [ -f '/Users/Edu/dev/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/E
 #  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
 #  [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/eduardo/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/eduardo/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/eduardo/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/eduardo/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+
+# >>> mamba initialize >>>
+# !! Contents within this block are managed by 'mamba init' !!
+export MAMBA_EXE="/Users/eduardo/.local/bin/micromamba";
+export MAMBA_ROOT_PREFIX="/Users/eduardo/micromamba";
+__mamba_setup="$("$MAMBA_EXE" shell hook --shell zsh --prefix "$MAMBA_ROOT_PREFIX" 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__mamba_setup"
+else
+    if [ -f "/Users/eduardo/micromamba/etc/profile.d/micromamba.sh" ]; then
+        . "/Users/eduardo/micromamba/etc/profile.d/micromamba.sh"
+    else
+        export  PATH="/Users/eduardo/micromamba/bin:$PATH"  # extra space after export prevents interference from conda init
+    fi
+fi
+unset __mamba_setup
+# <<< mamba initialize <<<
+
+# Created by `pipx` on 2023-04-28 15:51:59
+export PATH="$PATH:/Users/eduardo/.local/bin"
