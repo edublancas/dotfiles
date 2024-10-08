@@ -98,19 +98,60 @@ function compressmp4() {
 
 # Function to compress a GIF file
 function compressgif() {
-    if [ -z "$1" ]; then
+    local level="low"
+    local input_file=""
+
+    # Parse arguments
+    while [[ $# -gt 0 ]]; do
+        case "$1" in
+            --level)
+                level="$2"
+                shift 2
+                ;;
+            *)
+                input_file="$1"
+                shift
+                ;;
+        esac
+    done
+
+    if [ -z "$input_file" ]; then
         echo "Error: No input file provided"
-        echo "Usage: compressgif <input_file.gif>"
+        echo "Usage: compressgif [--level low|medium|high] <input_file.gif>"
         return 1
     fi
 
-    local input_file="$1"
     local filename=$(basename -- "$input_file")
     local name="${filename%.*}"
     local output_file="${name}-compressed.gif"
 
     echo "Compressing $input_file to $output_file"
-    gifsicle -O3 --colors 32 --lossy=90 "$input_file" -o "$output_file"
+
+    local optimize="3"
+    local colors="32"
+    local lossy=""
+    local scale=""
+
+    case "$level" in
+        low)
+            lossy="90"
+            scale="1.0"
+            ;;
+        medium)
+            lossy="100"
+            scale="0.9"
+            ;;
+        high)
+            lossy="100"
+            scale="0.8"
+            ;;
+        *)
+            echo "Error: Invalid compression level. Use low, medium, or high."
+            return 1
+            ;;
+    esac
+
+    gifsicle --optimize="$optimize" --colors="$colors" --lossy="$lossy" --scale="$scale" "$input_file" -o "$output_file"
 
     if [ $? -eq 0 ]; then
         echo "Compression completed successfully"
@@ -118,4 +159,3 @@ function compressgif() {
         echo "Error: Compression failed"
     fi
 }
-
