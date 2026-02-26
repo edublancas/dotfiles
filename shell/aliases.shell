@@ -165,31 +165,3 @@ function compressgif() {
     fi
 }
 
-# ai commits
-gac() {
-  # Generate commit message from staged + unstaged changes
-  local msg
-  msg=$(git diff --patch | llm -m gpt-4o-mini "Write a concise conventional commit message. Max 1 line.")
-
-  # Fallback if empty
-  if [[ -z "$msg" ]]; then
-    echo "No changes detected or message generation failed."
-    return 1
-  fi
-
-  echo ""
-  echo "Proposed commit message:"
-  echo "--------------------------------"
-  echo "$msg"
-  echo "--------------------------------"
-  echo ""
-
-  read "confirm?Commit with this message? (y/n): "
-
-  if [[ "$confirm" == "y" || "$confirm" == "Y" ]]; then
-    git add --all
-    git commit -m "$msg"
-  else
-    echo "Commit aborted."
-  fi
-}
