@@ -107,3 +107,6 @@ unset __mamba_setup
 
 # Created by `pipx` on 2023-04-28 15:51:59
 export PATH="$PATH:/Users/eduardo/.local/bin"
+
+# Added by Windsurf
+export PATH="/Users/eduardo/.codeium/windsurf/bin:$PATH"

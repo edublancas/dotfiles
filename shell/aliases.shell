@@ -15,14 +15,19 @@ alias vi="vim"
 # alias act="conda activate"
 
 # git aliases
-alias gs="git status"
 alias ga="git add --all"
-alias gc="git commit -m"
-alias gsa="git status; git add --all"
+alias gs="git status"
 alias gd="git diff --staged"
+alias gc="git commit -m"
+
+alias gss="git add --all && git status"
+alias gdd="git add --all && git diff --staged"
+alias gsa="git status && git add --all"
 alias gdt="git difftool --staged"
+
 alias gps="git push"
 alias gpl="git pull"
+alias gl="git log"
 
 # delete branches
 function gbdel {
@@ -158,4 +163,33 @@ function compressgif() {
     else
         echo "Error: Compression failed"
     fi
+}
+
+# ai commits
+gac() {
+  # Generate commit message from staged + unstaged changes
+  local msg
+  msg=$(git diff --patch | llm -m gpt-4o-mini "Write a concise conventional commit message. Max 1 line.")
+
+  # Fallback if empty
+  if [[ -z "$msg" ]]; then
+    echo "No changes detected or message generation failed."
+    return 1
+  fi
+
+  echo ""
+  echo "Proposed commit message:"
+  echo "--------------------------------"
+  echo "$msg"
+  echo "--------------------------------"
+  echo ""
+
+  read "confirm?Commit with this message? (y/n): "
+
+  if [[ "$confirm" == "y" || "$confirm" == "Y" ]]; then
+    git add --all
+    git commit -m "$msg"
+  else
+    echo "Commit aborted."
+  fi
 }
