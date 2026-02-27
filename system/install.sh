@@ -7,6 +7,7 @@ brew install autojump
 brew install tree
 brew install tldr
 brew install vim
+brew install direnv
 
 # htop
 brew install htop
