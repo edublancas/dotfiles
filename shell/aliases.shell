@@ -18,7 +18,9 @@ alias vi="vim"
 alias ga="git add --all"
 alias gs="git status"
 alias gd="git diff --staged"
-alias gc="git commit -m"
+# unalias needed because oh-my-zsh git plugin defines gc='git commit --verbose'
+unalias gc 2>/dev/null
+gc() { git commit -m "$*"; }
 
 alias gss="git add --all && git status"
 alias gdd="git add --all && git diff --staged"
