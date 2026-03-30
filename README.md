@@ -26,6 +26,14 @@ cd dotfiles/setup
 ./make_symlinks
 ```
 
+## Claude symlinks
+
+Symlinks `claude/CLAUDE.md` and files in `claude/skills/` to `~/.claude/`:
+
+```bash
+cd setup && python claude_symlinks.py
+```
+
 ## Syncing
 
 Once you ran `install`, there are some scripts to sync settings:
